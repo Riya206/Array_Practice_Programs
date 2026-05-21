@@ -20,7 +20,7 @@ public class Linear_search {
 	
 	for(int i=0;i<n;i++) {
 		if(arr[i]==key) {
-			System.out.println("Element found at index:"+(i+1));
+			System.out.println("Element found at index:"+(i));
 			return;
 		}
 			
