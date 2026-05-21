@@ -22,14 +22,14 @@ public class Binary_search {
 	while(low<=high){
 		int mid=(low+high)/2;
 		if(arr[mid]==key) {
-			System.out.print(+(mid+1));
+			System.out.print(mid);
 			return;
 		}
 		else if(arr[mid]>key) {
-			low=low+1;
+			high=mid-1;
 		}
 		else {
-			high=high-1;
+			low=mid+1;
 		}
 	}
 	System.out.print("Element not found ");
